@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Guilherme Gonçalves de Souza" />
+    <meta
+      name="description"
+      content="Desafio News homepage Front-end Mentor."
+    />
+    <meta name="keywords" content="HTML,CSS,JavaScript, DOM,  Front-end mentor" />
+
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>News homepage</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="Logo">
+            </div>
+            <div class="menu none">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Mobile:-->
+            <div class="menu-openner">
+                <img onclick="openMenu()" src="./assets/images/icon-menu.svg" alt="Menu openner">
+            </div>
+            <div class="menu-mobile none">
+                <img onclick="menuClose()" src="./assets/images/icon-menu-close.svg" alt="Menu close">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <main>
+            <div class="news">
+                <div class="banner-news"></div>
+                <section>
+                    <h1>The bright Future of Web 3.0?</h1>
+                    <article> 
+                        <p> We dive into the next evolution of the web that claims to put 
+                            the power of the platforms back into the hands of the people.
+                            But is it really fulfilling its pomise?
+                        </p>
+                        <a href="#">Read More</a>
+                    </article>
+                </section>
+            </div>
+            <aside>
+                <h2>New</h2>
+                <div class="notices">
+                    <div class="notice">
+                        <h3>Hydrogen VS Electric Cars</h3>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="notice">
+                        <h3>The Downsides of All Artistry</h3>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="notice">
+                        <h3>Is VC Funding Drying Up?</h3>
+                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <div class="best-news">
+                <img src="./assets/images/image-retro-pcs.jpg" alt="Image notice Reviving Retro PCs">
+                <div class="content">
+                    <h3>01</h3>
+                    <h4>Reviving Retro PCs</h4>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+            <div class="best-news">
+                <img src="./assets/images/image-top-laptops.jpg" alt="Image notice Top 10 laptops of 2022">
+                <div class="content">
+                    <h3>02</h3>
+                    <h4>Top 10 Laptops of 2022</h4>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+            <div class="best-news">
+                <img src="./assets/images/image-gaming-growth.jpg" alt="Image notice The growth of gaming">
+                <div class="content">
+                    <h3>03</h3>
+                    <h4>The Growth of Gaming</h4>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
